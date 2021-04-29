@@ -13,7 +13,6 @@ bird_x = 50
 bird_y = 300
 bird_y_change = 0
 
-
 def display_bird(x, y):
     SCREEN.blit(BIRD_IMAGE, (x, y))
 
@@ -46,8 +45,8 @@ startFont = pygame.font.Font('freesansbold.ttf', 32)
 
 
 def start():
-    # display = startFont.render(f"Нажми пробел для старта", True, (255, 255, 255))
-    # SCREEN.blit(display, (20, 200))
+    display = startFont.render(f"Нажми пробел для старта", True, (255, 255, 255))
+    SCREEN.blit(display, (20, 200))
     pygame.display.update()
 
 
@@ -124,6 +123,8 @@ while running:
     while waiting:
         if collision:
             game_over()
+            start()
+        else:
             start()
 
             print(arr)
