@@ -6,9 +6,9 @@ pygame.init()
 
 SCREEN = pygame.display.set_mode((500, 750))
 
-BACKGROUND_IMAGE = pygame.image.load('background.jpg')
+BACKGROUND_IMAGE = pygame.image.load('Pictures\\background.jpg')
 
-BIRD_IMAGE = pygame.image.load('самолет-removebg-preview.png').convert_alpha()
+BIRD_IMAGE = pygame.image.load('Pictures\\самолет-removebg-preview.png').convert_alpha()
 bird_x = 50
 bird_y = 300
 bird_y_change = 0
@@ -76,7 +76,7 @@ waiting = True
 
 collision = False
 
-obstacle_image = pygame.image.load('здание.png')
+obstacle_image = pygame.image.load('Pictures\\здание.png')
 
 xrenx = obstacle_x
 
